@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Utils.Listener"/>
+    <listener class-name="Resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Regression Tests(failed)">
+    <classes>
+      <class name="com.mycompany.app.CopyTest">
+        <methods>
+          <include name="MeaningfulName2"/>
+          <include name="navigateHome"/>
+          <include name="closeBrowser"/>
+          <include name="MeaningfulName"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.mycompany.app.CopyTest -->
+      <class name="com.mycompany.app.CopyTest2">
+        <methods>
+          <include name="invalidLoginTest_InvalidUserNameInvalidPassword"/>
+          <include name="invalidLoginTest_EmptyUserEmptyPassword"/>
+        </methods>
+      </class> <!-- com.mycompany.app.CopyTest2 -->
+    </classes>
+  </test> <!-- Regression Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
